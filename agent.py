@@ -6,7 +6,7 @@ import json
 import os
 
 # --- 1. CONFIGURATION ---
-GENAI_API_KEY = "AIzaSyA_WNO2Kzb1JoCj9ea_JWwmXTpt6obDjbA" 
+GENAI_API_KEY = "AIzaSyDZDeTIVRCO0UQJNMzil0d0PBAOnorazLE" 
 
 # Initializing with the NEW Client approach (matches your pip install)
 client = genai.Client(api_key=GENAI_API_KEY)
@@ -31,8 +31,9 @@ if uploaded_file is not None:
 
         try:
             # B. FIXING THE ERROR: 
-            # We add 'force_text=True' to skip the broken ONNX layout engine.
-            # This extracts the resume content perfectly without crashing!
+            # We add 'pymupdf4llm.use_layout(False)' to SKIP the ONNX engine entirely.
+            # Using force_text=True is not enough, the engine still initializes!
+            pymupdf4llm.use_layout(False)
             md_text = pymupdf4llm.to_markdown(tmp_path, force_text=True)
             
             # C. The "Agent" Prompt
@@ -55,7 +56,7 @@ if uploaded_file is not None:
 
             # D. Modern LLM Call
             response = client.models.generate_content(
-                model="gemini-2.0-flash", 
+                model="gemini-2.5-flash", 
                 contents=prompt
             )
             
