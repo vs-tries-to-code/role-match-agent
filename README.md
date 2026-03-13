@@ -115,10 +115,12 @@ The app will open automatically in your browser at `http://localhost:8501`.
 
 ## Built with
 
-- [Streamlit](https://streamlit.io/) — UI framework
-- [pymupdf4llm](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/) — PDF to markdown extraction
-- [Google Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/) — LLM for role analysis
-- [python-dotenv](https://pypi.org/project/python-dotenv/) — environment variable management
+- [Streamlit](https://streamlit.io/) - UI framework
+- [pymupdf4llm](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/) - PDF to markdown extraction
+- [Google Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/) - LLM for role analysis
+- [python-dotenv](https://pypi.org/project/python-dotenv/) - environment variable management
+- [Google Antigravity](https://antigravity.google/) - IDE with AI assistance
+
 
 ---
 
