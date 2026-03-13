@@ -2,7 +2,7 @@
 
 An AI-powered career tool that analyses your resume and suggests the most relevant job roles for you — complete with skill match scores, resume readiness scores, and personalised improvement tips.
 
-Built with [Streamlit](https://streamlit.io/) and [Google Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/).
+Built with [Streamlit](https://streamlit.io/) and [Google Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/), using [Google Antigravity](https://antigravity.google/)
 
 ---
 
